@@ -44,6 +44,12 @@ namespace TasyFeedback.Views
             error.Descripcion = TxtDescrip.Text.Trim();
             error.Img = TxtImagen.Text.Trim();
             error.Solucion = TxtSolucion.Text.Trim();
+            if (error.ErrorId > 0)
+            {
+                MessageBox.Show("No se guardó, porque el registro ya existe.");
+                return;
+            }
+
             if (errorController.InsertOne(error))
                 MessageBox.Show("Proceso completado");
         }

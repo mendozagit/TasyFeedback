@@ -49,10 +49,7 @@ namespace TasyFeedback.Views
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-
-
             Close();
-
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
