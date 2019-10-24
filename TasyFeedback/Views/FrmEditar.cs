@@ -51,7 +51,7 @@ namespace TasyFeedback.Views
         {
 
 
-
+            Close();
 
         }
 
